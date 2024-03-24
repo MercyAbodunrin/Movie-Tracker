@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favAnime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-BMFw3g02Pq2Gs2sVE6P9wvSwZjz/1Mbx6S9ZVFArjT95Q5PZXk74U9d5v/6XtSFQ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./movie.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <button type="reset" id="toggle-mode"><i class="fas fa-moon"></i></button>
+
+                <h1 style="font-size: 25px; font-weight: 700; color: whitesmoke;">Otaku Tracker</h1>
+                
+                <form action="" id="search-movies">
+                 <input type="text" placeholder="Search movies...">
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div id="movie-list">
+                <h2 class="title">Movies to Watch</h2>
+
+                <ul>
+                    <li>
+                        <span class="name">Solo Leveling</span>
+                        <span class="delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="name">One Piece</span>
+                        <span class="delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Tsukimichi</span>
+                        <span class="delete">delete</span>
+                    </li>
+                    <li>
+                        <span class="name">Attack On Titans</span>
+                        <span class="delete">delete</span>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </main>
+
+        <div>
+            <form id="add-movie">
+                <input type="checkbox" id="hide">
+                <label for="hide">Hide all movies</label>
+                
+                <input type="text" placeholder="Add a movie..." />
+                <button>Add</button>
+            </form>
+        </div>
+
+
+        <div id="tabbed-content">
+            <ul class="tabs">
+                <li data-target="about" class="active">About</li>
+                <li data-target="contact">Contact</li>
+            </ul>
+        
+            <div class="panel" id="about">
+                <p style="color: rgb(248, 111, 37); font-size: 15px;">This is a simple Anime-movie tracker named 'OTAKU TRACKER' a Japanese term that refers to someone who is highly passionate about anime, manga, and other forms of Japanese pop culture. It's a term that carries a sense of enthusiasm and dedication to the anime fandom. Just like a To-Do list, this tracker helps users to add, search (filter),hide and  delete as the case maybe.</p>
+            </div>
+        
+            <div class="panel" id="contact">
+                <a style="text-decoration: none; color: rgb(248, 111, 37); font-size:16px;" href="https:/Twitter.com/ChoclateDCoder"><p>Twitter: @ChocolateDCoder</p></a>
+            </div>
+        </div>
+       
+    </div>
+    
+    <script src="./movie.js"></script>
+</body>
+</html>
